@@ -1,0 +1,17 @@
+.navigation-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-option {
+  width: 25%;
+  height: 60px;
+  background-color: aquamarine;
+  border: none;
+}
+
+.img-option {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
