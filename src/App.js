@@ -6,6 +6,7 @@ import AppContext from './context/AppContext';
 import LoadingPage from './components/LoadingPage/LoadingPage';
 import Header from './components/Header.js/Header';
 import Navigation from './components/Navigation/Navigation';
+import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
   const { isLoading, setIsLoading } = useContext(AppContext);
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <SearchBar />
         <Navigation />
         <Routers />
       </Router>

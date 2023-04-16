@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import BannerPromo from '../components/BannerPromo/BannerPromo';
 import AppContext from '../context/AppContext'
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <div className="page-container">
-      <h1>Uni Duni Tê Kids</h1>
+      <BannerPromo />
     </div>
   )
 }

@@ -29,7 +29,7 @@ function Header() {
       <div className="logo-container">
         <img className="logo-header" src={Logo} alt="logo.png" />
       </div>
-      <forms className="login-container">
+      <form className="login-container">
         <label>
           e-mail
           <input name="email" type="text" onChange={ (e) => handleChange(e) } />
@@ -39,7 +39,7 @@ function Header() {
           <input name="password" type="text" onChange={ (e) => handleChange(e) } />
         </label>
         <button>Entrar</button>
-      </forms>
+      </form>
     </header>
   )
 }
