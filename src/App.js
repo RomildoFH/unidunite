@@ -9,10 +9,8 @@ import Navigation from './components/Navigation/Navigation';
 import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
-  const { isLoading, setIsLoading } = useContext(AppContext);
-  setTimeout(() => {
-    setIsLoading(false)
-  }, 1000);
+  const { isLoading } = useContext(AppContext);
+
   return (
     isLoading ? (<LoadingPage />) :
     <div className="App">

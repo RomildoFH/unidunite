@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import BannerPromo from '../components/BannerPromo/BannerPromo';
+import ProductList from '../components/ProductList/ProductList';
 import AppContext from '../context/AppContext'
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
   return (
     <div className="page-container">
       <BannerPromo />
+      <ProductList />
     </div>
   )
 }
