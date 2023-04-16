@@ -6,6 +6,8 @@ function Routers() {
   return (
     <Routes>
       <Route exact path="/unidunite" element={ <Home /> } />
+      {/* <Route exact path="/unidunite/unidunite" element={ <Home /> } />
+      <Route exact path="/" element={ <Home /> } /> */}
     </Routes>
   )
 }
