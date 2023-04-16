@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/unidunite/static/css/main.073c9b0a.css",
-    "main.js": "/unidunite/static/js/main.017362a7.js",
+    "main.js": "/unidunite/static/js/main.fb57a831.js",
     "static/js/787.39a97b92.chunk.js": "/unidunite/static/js/787.39a97b92.chunk.js",
     "index.html": "/unidunite/index.html",
     "main.073c9b0a.css.map": "/unidunite/static/css/main.073c9b0a.css.map",
-    "main.017362a7.js.map": "/unidunite/static/js/main.017362a7.js.map",
+    "main.fb57a831.js.map": "/unidunite/static/js/main.fb57a831.js.map",
     "787.39a97b92.chunk.js.map": "/unidunite/static/js/787.39a97b92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.017362a7.js"
+    "static/js/main.fb57a831.js"
   ]
 }
