@@ -7,6 +7,7 @@ function AppProvider( { children } ) {
   const [productList, setProductList] = useState({});
   const [searchTerm, setSearchTerm] = useState('');
   const [filtredList, setFiltredList] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState({});
 
   const values = useMemo(() => ({
     isLoading,
@@ -19,12 +20,15 @@ function AppProvider( { children } ) {
     setSearchTerm,
     filtredList,
     setFiltredList,
+    selectedProduct,
+    setSelectedProduct
   }), [
     isLoading,
     email,
     productList,
     searchTerm,
     filtredList,
+    selectedProduct,
   ])
 
 

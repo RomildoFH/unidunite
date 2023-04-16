@@ -11,10 +11,12 @@ function ProductList() {
       <section className="product-list">
         {
           filtredList.length < 1 ?
-            <h3>Desculpe, não encontrei nenhum produto</h3> :
+            <h5>Desculpe, não encontrei nenhum produto</h5> :
             (
               filtredList.map((product) => (
-                <ProductCard product={ product } />
+                <ProductCard
+                  product={ product }
+                />
               ))
             )
         }

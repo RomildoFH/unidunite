@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ProductCard.css';
 
 function ProductCard(props) {
@@ -21,6 +22,7 @@ function ProductCard(props) {
       <p>{ name }</p>
       <p>{ `R$ ${cost.toFixed(2)}` }</p>
       <p>{ `Ref.: ${_id}` }</p>
+      <Link className="product-link" to={ `/unidunite/products/${_id}` }>Detalhes</Link>
     </div>
   )
 }
