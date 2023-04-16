@@ -5,7 +5,7 @@ import Home from './pages/Home'
 function Routers() {
   return (
     <Routes>
-      <Route exact path="/" element={ <Home /> } />
+      <Route exact path="/unidunite" element={ <Home /> } />
     </Routes>
   )
 }
