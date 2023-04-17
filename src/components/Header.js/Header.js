@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import AppContext from '../../context/AppContext';
 import Logo from '../../images/Logo_transparente.png'
 import './Header.css';
@@ -6,9 +7,6 @@ import './Header.css';
 function Header() {
 
   const {
-    // isLoading,
-    // setIsLoading,
-    // email,
     setEmail,
   } = useContext(AppContext);
 
@@ -27,7 +25,9 @@ function Header() {
   return (
     <header>
       <div className="logo-container">
-        <img className="logo-header" src={Logo} alt="logo.png" />
+        <Link to={ `/unidunite` }>
+          <img className="logo-header" src={Logo} alt="logo.png" />        
+        </Link>
       </div>
       <form className="login-container">
         <label>

@@ -14,6 +14,9 @@ function ProductCard(props) {
     size,
     manufacturer,
     thumb,
+    gallery,
+    genders,
+    tags,
   } = props.product
 
   const handleClick = () => {
@@ -26,6 +29,9 @@ function ProductCard(props) {
       size,
       manufacturer,
       thumb,
+      gallery,
+      genders,
+      tags,
     })
     setIsLoading(true)
   }

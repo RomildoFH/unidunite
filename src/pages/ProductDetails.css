@@ -1,0 +1,41 @@
+.product-show {
+  display: flex;
+  width: 100%;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;
+}
+
+.photo-gallery {
+  max-width: 50px;
+}
+
+.photo-active {
+  width: 60%;
+}
+
+.product-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-control-right {
+  position: fixed;
+  bottom: calc(50% - 50px);
+  right: 0;
+}
+
+.flow-control-arrow {  
+  height: calc(100vh * 0.1);
+  width: calc(100vw * 0.05);
+}
+
+.flow-control-left {
+  position: fixed;
+  top: calc(50% - 25px);
+  left: 0;
+  transform: rotate(180deg);
+}

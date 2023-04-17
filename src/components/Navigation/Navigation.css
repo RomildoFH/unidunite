@@ -1,6 +1,7 @@
 .navigation-top {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 22px;
 }
 
 .nav-option {
