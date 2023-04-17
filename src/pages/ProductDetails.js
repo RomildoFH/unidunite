@@ -4,7 +4,7 @@ import AppContext from '../context/AppContext';
 import './ProductDetails.css';
 
 function ProductDetails(props) {
-  const { setIsLoading, selectedProduct, filtredList} = useContext(AppContext)
+  const { setIsLoading, selectedProduct, setSelectedProduct, filtredList} = useContext(AppContext)
   // const location = useLocation();
   // console.log(location.pathname)
 
@@ -44,9 +44,19 @@ function ProductDetails(props) {
 
   const handleClick = ({ target }) => {
     const {name, value} = target
-
-    if(name === 'photo-gallery') {
-      setPhoto(target.src)
+    console.log('clickou')
+    switch (name) {
+      case 'photo-gallery':
+        setPhoto(target.src);
+        break;
+      case 'move-right':
+        const newId = id + 1;
+        const newProduct = filtredList.filter((product) => product.id === newId);
+        setSelectedProduct(newProduct);
+        console.log('movendo para direita')
+        break;
+      default:
+        break;
     }
   }
 
@@ -90,20 +100,22 @@ function ProductDetails(props) {
           </label>
         </div>
       </section>
-      {
+      {/* {
         id < filtredList.length ? (
-          <div className="flow-control-right">
+          <div className="flow-control-right" name="move-right">
             <img
               className="flow-control-arrow"
               src="https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png"
               alt="arrow-right"
+              onClick={(e) => handleClick(e)}
+              name="move-right"
             />
           </div>
         ) : null
       }
       {
         id > 1 ? (
-          <div className="flow-control-left">
+          <div className="flow-control-left" name="move-left">
             <img
               className="flow-control-arrow"
               src="https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png"
@@ -111,7 +123,7 @@ function ProductDetails(props) {
             />
           </div>
         ) : null
-      }
+      } */}
     </main>
   )
 }
