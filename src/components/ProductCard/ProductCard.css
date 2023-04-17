@@ -10,3 +10,8 @@
 .product-card-image {
   max-width: 70%
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
