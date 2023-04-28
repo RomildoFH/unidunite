@@ -2,6 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 // import { useLocation } from 'react-router-dom'
 import AppContext from '../context/AppContext';
 import './ProductDetails.css';
+import Magnifier from '../components/Magnifier/Magnifier';
+import magnify from '../components/Magnifier/Magnifier';
+import ImageMagnifier from '../components/Magnifier/Magnifier';
 
 function ProductDetails(props) {
   const { setIsLoading, selectedProduct, setSelectedProduct, filtredList} = useContext(AppContext)
@@ -77,7 +80,7 @@ function ProductDetails(props) {
             ))
           }
         </div>
-        <img className="photo-active" src={ photo } alt={ `${name}.png` } />
+        <ImageMagnifier src={ photo } width="60%" />
         <div className="product-menu">
           <h3 className="product-title">{ name }</h3>
           <p className="product-description">{description}</p>
@@ -100,30 +103,6 @@ function ProductDetails(props) {
           </label>
         </div>
       </section>
-      {/* {
-        id < filtredList.length ? (
-          <div className="flow-control-right" name="move-right">
-            <img
-              className="flow-control-arrow"
-              src="https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png"
-              alt="arrow-right"
-              onClick={(e) => handleClick(e)}
-              name="move-right"
-            />
-          </div>
-        ) : null
-      }
-      {
-        id > 1 ? (
-          <div className="flow-control-left" name="move-left">
-            <img
-              className="flow-control-arrow"
-              src="https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png"
-              alt="arrow-left"
-            />
-          </div>
-        ) : null
-      } */}
     </main>
   )
 }

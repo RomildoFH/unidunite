@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 
 .product-gallery {
@@ -23,6 +23,7 @@
 .product-menu {
   display: flex;
   flex-direction: column;
+  max-width: 30vw 
 }
 
 .flow-control-right {
