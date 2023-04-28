@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/unidunite/static/css/main.0c7006de.css",
-    "main.js": "/unidunite/static/js/main.30627c8d.js",
+    "main.css": "/unidunite/static/css/main.ae4a45da.css",
+    "main.js": "/unidunite/static/js/main.69316f87.js",
     "static/js/787.39a97b92.chunk.js": "/unidunite/static/js/787.39a97b92.chunk.js",
     "static/media/Logo_transparente.png": "/unidunite/static/media/Logo_transparente.7c1012a86d5aed767cc5.png",
     "index.html": "/unidunite/index.html",
-    "main.0c7006de.css.map": "/unidunite/static/css/main.0c7006de.css.map",
-    "main.30627c8d.js.map": "/unidunite/static/js/main.30627c8d.js.map",
+    "main.ae4a45da.css.map": "/unidunite/static/css/main.ae4a45da.css.map",
+    "main.69316f87.js.map": "/unidunite/static/js/main.69316f87.js.map",
     "787.39a97b92.chunk.js.map": "/unidunite/static/js/787.39a97b92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c7006de.css",
-    "static/js/main.30627c8d.js"
+    "static/css/main.ae4a45da.css",
+    "static/js/main.69316f87.js"
   ]
 }
