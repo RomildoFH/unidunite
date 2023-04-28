@@ -237,11 +237,13 @@ const dataBase = [
     "supplier": "Nana Nenem",
     "manufacturer": "Pegada legal",
     "buy_date": "2023-03-23",
-    "thumb": "https://cdn.pixabay.com/photo/2016/12/06/09/30/blank-1886001_960_720.png",
+    "thumb": "https://images2.imgbox.com/08/d8/n2PsSLUC_o.jpeg",
     "gallery": [
-      "https://cdn.pixabay.com/photo/2016/12/06/09/30/blank-1886001_960_720.png",
-      "https://cdn.pixabay.com/photo/2017/01/13/04/56/t-shirt-1976334_960_720.png",
-      "https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_960_720.png",
+      "https://images2.imgbox.com/08/d8/n2PsSLUC_o.jpeg",
+      "https://images2.imgbox.com/dc/05/nYjtmWjl_o.jpeg",
+      "https://images2.imgbox.com/e7/20/wzJB8D0F_o.jpeg",
+      "https://images2.imgbox.com/38/f5/WyBFcc6k_o.jpeg",
+      "https://images2.imgbox.com/d9/6c/SMpWqK6x_o.jpeg",
     ],
     "genders": ["Menina"],
     "tags": ["Roupas", "Conjuntos", "Moletom"]

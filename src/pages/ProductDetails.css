@@ -1,6 +1,8 @@
 .product-show {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .product-gallery {
@@ -10,6 +12,7 @@
 }
 
 .photo-gallery {
+  margin-bottom: 4px;
   max-width: 50px;
 }
 

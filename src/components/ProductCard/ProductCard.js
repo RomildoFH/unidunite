@@ -48,9 +48,11 @@ function ProductCard(props) {
           alt={ `product-id` }
           className="product-card-image"
         />
-        <p>{ name }</p>
-        <p>{ `R$ ${cost.toFixed(2)}` }</p>
-        <p>{ `Ref.: ${_id}` }</p>
+        <div className="card-info">
+          <p>{ name }</p>
+          <p>{ `R$ ${cost.toFixed(2)}` }</p>
+          <p>{ `Ref.: ${_id}` }</p>          
+        </div>
       </Link>
     </div>
   )
