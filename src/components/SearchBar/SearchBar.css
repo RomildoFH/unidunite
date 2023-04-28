@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
+  background-color: #f7f7f7;
+  padding: 12px;
 }
 
 .search-icon {

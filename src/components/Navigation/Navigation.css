@@ -7,7 +7,7 @@
 .nav-option {
   width: 25%;
   height: 60px;
-  background-color: aquamarine;
+  background-color: #cad0d0;
   box-sizing: border-box;
   border: none;
   color: white;
@@ -27,4 +27,14 @@
   width: 24px;
   height: 24px;
   margin-right: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+  .navigation-top {
+    height: 20%;
+  }
+
+  .nav-option {
+    height: 80px;
+  }
 }

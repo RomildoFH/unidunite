@@ -26,7 +26,7 @@ function Header() {
     <header>
       <div className="logo-container">
         <Link to={ `/unidunite` }>
-          <img className="logo-header" src={Logo} alt="logo.png" />        
+          <img className="logo-header" src="https://thumbs2.imgbox.com/67/9f/w6BIjcPg_t.jpeg" alt="logo.png" />        
         </Link>
       </div>
       <form className="login-container">

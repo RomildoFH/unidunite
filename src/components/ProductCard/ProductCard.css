@@ -7,20 +7,42 @@
   margin: 0 12px 12px 12px;
 }
 
+.product-card:hover {  
+  filter: brightness(120%);
+  transform: scale(110%);
+}
+
 .product-card-image {
   max-width: 70%;
   max-height: 190px;
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
   border-radius: 10px;
 }
 
 .product-link {
   color: black;
   text-decoration: none;
-  height: 230px;
+  max-height: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.card-title {
+  color: #abaaba;
+  font-family: 'Cormorant', serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-price {
+  /* font-family: 'Cormorant', serif; */
+  font-family: 'Markazi Text', serif;
+  /* font-family: 'Source Serif Pro', serif; */
+  font-weight: 700;
+  font-size: 24px;
 }
