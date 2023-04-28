@@ -66,27 +66,29 @@ function ProductDetails(props) {
   return (
     <main>
       <section className="product-show">
-        <div className="product-gallery">
-          {
-            gallery.map((photo, index) => (
-              <img
-                className="photo-gallery"
-                name="photo-gallery"
-                key={`photo-${index}`}
-                src={ photo }
-                alt={`${id}-${index}`}
-                onClick={ (e) => handleClick(e) }
-              />
-            ))
-          }
+        <div className="product-photos">
+          <div className="product-gallery">
+            {
+              gallery.map((photo, index) => (
+                <img
+                  className="photo-gallery"
+                  name="photo-gallery"
+                  key={`photo-${index}`}
+                  src={ photo }
+                  alt={`${id}-${index}`}
+                  onClick={ (e) => handleClick(e) }
+                />
+              ))
+            }
+          </div>
+          <ImageMagnifier src={ photo } width="60%" />
         </div>
-        <ImageMagnifier src={ photo } width="60%" />
         <div className="product-menu">
           <h3 className="product-title">{ name }</h3>
           <p className="product-description">{description}</p>
-          <p>{ `R$ ${cost.toFixed(2)}` }</p>
+          <p>{ `Preço: R$ ${cost.toFixed(2)}` }</p>
           <label>   
-            TAM:
+            Tamanhos disponíveis:
             <select>
               {
                 size.map((s) => (<option>{s}</option>))

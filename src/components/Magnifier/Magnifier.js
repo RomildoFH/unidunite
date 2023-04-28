@@ -1,3 +1,4 @@
+// código adaptado de https://dev.to/anxiny/create-an-image-magnifier-with-react-3fd7
 import { useState } from "react";
 
 function ImageMagnifier({
@@ -5,7 +6,7 @@ function ImageMagnifier({
   width,
   height,
   magnifierHeight = 100,
-  magnifieWidth = 100,
+  magnifieWidth = 150,
   zoomLevel = 1.5
 }) {
   const [[x, y], setXY] = useState([0, 0]);
@@ -13,12 +14,14 @@ function ImageMagnifier({
   const [showMagnifier, setShowMagnifier] = useState(false);
   return (
     <div
+      className="photo-active"
       style={{
         position: "relative",
         height: height,
-        width: width,
+        // width: width,
         minWidth: "220px",
-        maxWidth: "500px",
+        // maxWidth: "500px",
+        margin: "0 15px"
       }}
     >
       <img
